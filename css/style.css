@@ -1,0 +1,123 @@
+:root {
+    --main-color: #ff7e1b;
+    --gray: #69707d;
+    --black: #1d2026;
+    --btn-bg: #f6f8fd;
+    --badge-bg: #ffeee2;
+    --deleted: #b6bcc8;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+
+header nav ul li a {
+    font-size: 15px;
+    color: var(--gray);
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: var(--main-color);
+}
+
+header nav ul li:hover {
+    border-bottom: 1px solid var(--main-color);
+}
+
+.gilos {
+    text-align: center;
+    width: 30%;
+    font-weight: bold;
+    color: var(--black);
+}
+
+.btn__counts {
+    display: flex;
+    align-items: center;
+    background-color: var(--btn-bg);
+    border-radius: 10px;
+    overflow: hidden;
+    min-width: 157px;
+    line-height: normal;
+}
+
+.btn__counts button {
+    min-height: 56px;
+    width: 35%;
+    font-size: 25px;
+    color: var(--main-color);
+    font-weight: bold;
+    position: relative;
+}
+
+.btn__counts button:hover {
+    color: #fff;
+    border-radius: 10px;
+    background-color: var(--main-color);
+}
+
+.btn__counts button span {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.btn__carts {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-color);
+    display: inline-block;
+    color: #fff;
+    line-height: normal;
+    padding: 18px 70px;
+    border-radius: 10px;
+    transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+.modal {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 30;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(2px);
+    background-color: rgba(29, 15, 15, 0.555);
+}
+
+.modal img {
+    width: 535px;
+    border-radius: 13px;
+}
+
+.overlay {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+    position: fixed;
+    background-color: red;
+}
